@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <script src="public/script.js"></script>
+    <title>To-do app</title>
 </head>
 
 <body style="background-color: #3d3f32;">
@@ -29,25 +31,25 @@
         </header>
         <main class="flex w-full mb-2">
             <div style="width: 30%;"></div>
-            <div class=" flex flex-col text-sm text-white" style="width: 40%;">
-                <p class="text-lg font-medium mb-2">Thông tin cá nhân</p>
-                <div class="flex">
-                    <div class="mr-3">
-                        <img src="public/img/Snowman-2.jpg" alt="Avatar">
+            <div class=" flex justify-center items-start text-white gap-3" style="width: 40%;">
+                <div class="border w-1/2 pl-2 pr-2" style="background-color: #525252;">
+                    <p class="font-medium text-center mb-2 text-rose-400">In progress</p>
+                    <div id="taskList">
                     </div>
-                    <ul>
-                        <li>Họ và tên: Phan Hoàng Duy</li>
-                        <li>MSSV: 18127093</li>
-                        <li>Email: hdphan2220@gmail.com</li>
-                        <li>ĐT: 0906715811</li>
-                    </ul>
+                    <button id="addTaskButton" class="border border-sky-500 mb-2 pl-2 pr-2 bg-amber-600">Add new
+                        task</button>
+                </div>
+                <div class="border w-1/2 pl-2 pr-2" style="background-color: #525252;">
+                    <p class="font-medium text-center mb-2 text-emerald-400">Done</p>
+                    <div id="doneTaskList">
+                    </div>
                 </div>
             </div>
+            <div style="width: 30%;"></div>
         </main>
         <footer class="flex flex-col items-center w-full">
             <p class="text-white text-xs">31/10/2025</p>
-            <p class="text-white text-xs">Created by<a class="underline" href="mailto:hdphan2220@gmail.com"> Hoàng
-                    Duy</a></p>
+            <p class="text-white text-xs">Created by<a class="underline" href="mailto:hdphan2220@gmail.com"> Hoàng Duy</a></p>
             <P class="text-white text-xs">Tp. Hồ Chí Minh</P>
         </footer>
     </div>
